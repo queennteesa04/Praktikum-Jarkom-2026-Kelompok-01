@@ -58,11 +58,11 @@ config system interface
         set ip 10.10.10.2 255.255.255.252
         set allowaccess ping http https ssh
     next
-    edit "port2"
+    edit "port3"
         set ip 10.20.20.1 255.255.255.252
         set allowaccess ping
     next
-    edit "port3"
+    edit "port2"
         set ip 192.168.20.1 255.255.255.0
         set allowaccess ping
     next
@@ -107,7 +107,7 @@ end
 config firewall policy
     edit 1
         set name "LAN_to_WAN"
-        set srcintf "port2"
+        set srcintf "port3"
         set dstintf "port1"
         set srcaddr "LAN"
         set dstaddr "all"
@@ -118,8 +118,8 @@ config firewall policy
     next
     edit 2
         set name "LAN_to_DMZ"
-        set srcintf "port2"
-        set dstintf "port3"
+        set srcintf "port3"
+        set dstintf "port2"
         set srcaddr "LAN"
         set dstaddr "DMZ_Server"
         set action accept
@@ -130,7 +130,7 @@ config firewall policy
     edit 3
         set name "WAN_to_DMZ_HTTP"
         set srcintf "port1"
-        set dstintf "port3"
+        set dstintf "port2"
         set srcaddr "Client_WAN"
         set dstaddr "VIP_to_DMZ"
         set action accept
@@ -140,7 +140,7 @@ config firewall policy
     next
     edit 4
         set name "DMZ_to_WAN_Internet"
-        set srcintf "port3"
+        set srcintf "port2"
         set dstintf "port1"
         set srcaddr "all"
         set dstaddr "all"
@@ -151,7 +151,7 @@ config firewall policy
     next
 end
 ```
-*(Catatan: Konfigurasi dilakukan sepenuhnya via CLI untuk menghindari isu kompatibilitas GUI pada browser Client)*
+*(Catatan: Konfigurasi dilakukan sepenuhnya via CLI karena tidak bisa mengakses GUI)*
 
 ### 3.4. Ubuntu Server DMZ
 Konfigurasi IP Statis menggunakan Netplan dan setup Web Server Nginx.
