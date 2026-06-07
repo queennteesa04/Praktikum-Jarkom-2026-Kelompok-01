@@ -1,4 +1,4 @@
-# Laporan Akhir - Tugas Modul 4: Firewall & NAT
+<img width="334" height="126" alt="WhatsApp Image 2026-06-08 at 2 45 29 AM (1)" src="https://github.com/user-attachments/assets/5dcd0d20-2c03-4fab-b0be-0d509f9a71cb" /># Laporan Akhir - Tugas Modul 4: Firewall & NAT
 
 **Kelompok 03**
 Anggota Kelompok:
@@ -11,8 +11,9 @@ Anggota Kelompok:
 ## 1. Topologi Jaringan
 Berikut adalah topologi jaringan yang digunakan pada praktikum ini:
 
-![Topologi PNETLab]([link-atau-path-gambar-topologi-kamu-di-github])
-*(Hapus teks ini dan tempel screenshot topologi PNETLab kamu secara utuh)*
+![Topologi PNETLab]
+<img width="872" height="720" alt="Modul 4_LA - Topologi" src="https://github.com/user-attachments/assets/898d5ea8-e33d-417e-991f-bac3a6f386c8" />
+
 
 ---
 
@@ -39,17 +40,14 @@ Berdasarkan segmentasi jaringan, berikut adalah alokasi IP Address untuk setiap 
 
 ### 3.1. MikroTik ISP
 Konfigurasi DHCP Client, IP Address, NAT masquerade, dan rute statis ke LAN dan DMZ.
-```routeros
-[Tempel teks export konfigurasi MikroTik di sini]
-```
-![Screenshot MikroTik]([link-gambar-screenshot-terminal-mikrotik])
+<img width="786" height="441" alt="image" src="https://github.com/user-attachments/assets/fecc32e9-ecd7-4859-be48-faeb7b5087a4" />
+
 
 ### 3.2. Cisco Router
 Konfigurasi IP Address interface dan Default Route ke FortiGate.
-```ios
-[Tempel teks show running-config bagian interface dan route di sini]
-```
-![Screenshot Cisco]([link-gambar-screenshot-terminal-cisco])
+<img width="483" height="459" alt="image" src="https://github.com/user-attachments/assets/f03f50dd-05fa-4bcd-b71c-aa81f13cfb01" />
+<img width="450" height="481" alt="image" src="https://github.com/user-attachments/assets/be05ed52-e678-49a4-bd27-ada10cc3af87" />
+
 
 ### 3.3. FortiGate Firewall
 Konfigurasi IP Address, Static Route, Firewall Addresses, Virtual IPs (Port Forwarding), dan Firewall Policies.
@@ -60,15 +58,16 @@ Konfigurasi IP Address, Static Route, Firewall Addresses, Virtual IPs (Port Forw
 
 ### 3.4. Ubuntu Server DMZ
 Konfigurasi IP Statis menggunakan Netplan dan setup Web Server Nginx.
-```yaml
-[Tempel teks konfigurasi /etc/netplan/01-netcfg.yaml di sini]
-```
-![Screenshot Netplan & Nginx]([link-gambar-screenshot-terminal-ubuntu])
+<img width="411" height="187" alt="image" src="https://github.com/user-attachments/assets/0ae18a72-90a8-4c8a-b5b3-cfad0e03d4e4" />
+
 
 ### 3.5. PC Client (LAN & WAN)
 Konfigurasi IP statis pada TinyCore Linux (LAN dan WAN).
-![Screenshot IP LAN]([link-gambar-network-control-panel-LAN])
-![Screenshot IP WAN]([link-gambar-network-control-panel-WAN])
+#### LAN
+<img width="447" height="241" alt="image" src="https://github.com/user-attachments/assets/c4cdd33d-38c9-4a3e-8b57-038b1e35ae13" />
+#### WAN
+<img width="458" height="239" alt="image" src="https://github.com/user-attachments/assets/7667d3f4-8e5e-4c4e-8ee4-461493b89660" />
+
 
 ---
 
@@ -76,43 +75,40 @@ Konfigurasi IP statis pada TinyCore Linux (LAN dan WAN).
 *(Pastikan screenshot menampilkan perintah yang diketik dan nama perangkat)*
 
 1. **Pengujian Client LAN ke Gateway Cisco**
-   ![Ping LAN ke Cisco]([link-gambar])
+  <img width="346" height="145" alt="WhatsApp Image 2026-06-08 at 2 42 45 AM" src="https://github.com/user-attachments/assets/f59c3b44-9a54-4c41-ba2f-f6c2f166938b" />
+
 
 2. **Pengujian Client LAN ke FortiGate**
-   ![Ping LAN ke FortiGate]([link-gambar])
+  <img width="327" height="142" alt="WhatsApp Image 2026-06-08 at 2 42 45 AM (1)" src="https://github.com/user-attachments/assets/b701ede8-f140-45b1-b2c3-2d43879fd68f" />
+
 
 3. **Pengujian Client LAN ke DMZ**
-   ![Ping LAN ke DMZ]([link-gambar])
+   <img width="337" height="151" alt="WhatsApp Image 2026-06-08 at 2 42 45 AM (2)" src="https://github.com/user-attachments/assets/9c5a12b3-f310-4c4a-b36a-38041e288658" />
+
 
 4. **Pengujian Client LAN akses IP DMZ (Web Server)**
-   ![Akses Web DMZ dari LAN]([link-gambar])
+   <img width="581" height="418" alt="WhatsApp Image 2026-06-08 at 2 42 45 AM (3)" src="https://github.com/user-attachments/assets/47cb0eca-c297-4061-8c77-2369bce80388" />
+
 
 5. **Pengujian Client WAN ping ke ISP MikroTik**
-   ![Ping WAN ke MikroTik]([link-gambar])
+   <img width="345" height="145" alt="WhatsApp Image 2026-06-08 at 2 45 29 AM" src="https://github.com/user-attachments/assets/28e02b18-b01b-46d3-bd52-637f72765bd2" />
+
 
 6. **Pengujian Client WAN ping ke FortiGate**
-   ![Ping WAN ke FortiGate]([link-gambar])
+  <img width="334" height="126" alt="WhatsApp Image 2026-06-08 at 2 45 29 AM (1)" src="https://github.com/user-attachments/assets/d8837a0b-40ed-4bea-9f4b-b17cf49c0174" />
+
 
 7. **Pengujian Client WAN akses http://10.10.10.2 (Port Forwarding)**
-   ![Akses Web DMZ dari WAN via VIP]([link-gambar])
+  <img width="566" height="414" alt="WhatsApp Image 2026-06-08 at 2 45 29 AM (2)" src="https://github.com/user-attachments/assets/74dbdbf7-d1c1-4d9e-9d54-37c9d1c599d4" />
+
 
 8. **Pengujian Client WAN ping Client LAN (Hasil Drop/RTO)**
-   ![Ping WAN ke LAN RTO]([link-gambar])
+   <img width="351" height="68" alt="WhatsApp Image 2026-06-08 at 2 45 29 AM (3)" src="https://github.com/user-attachments/assets/a440e326-2dcc-427b-afab-d65979aa2328" />
+
 
 9. **Pengujian Client WAN ping IP asli DMZ (Hasil Drop/RTO)**
-   ![Ping WAN ke IP DMZ RTO]([link-gambar])
+  <img width="341" height="61" alt="WhatsApp Image 2026-06-08 at 2 46 34 AM" src="https://github.com/user-attachments/assets/6ff89536-6e84-4ece-8751-4fd79ac42a4c" />
+
 
 10. **Pengujian Server DMZ ping LAN (Hasil Drop/RTO)**
-    ![Ping DMZ ke LAN RTO]([link-gambar])
-
----
-
-## 5. Analisis dan Kesimpulan
-
-### Analisis
-* **NAT dan Port Forwarding:** [Tulis analisismu di sini. Contoh: Bagaimana fitur VIP (Destination NAT) di FortiGate membelokkan trafik dari Client WAN ke Ubuntu Server tanpa mengekspos IP asli server.]
-* **Firewall Filter dan DMZ:** [Tulis analisismu di sini. Jelaskan kenapa pada pengujian nomor 10, DMZ gagal melakukan ping ke LAN, kaitkan dengan prinsip *Connection Tracking*, *Stateful Firewall*, dan konsep *One-Way Trust* pada arsitektur DMZ.]
-
-### Kesimpulan
-[Tulis kesimpulan akhir mengenai praktikum ini. Contoh: Praktikum ini membuktikan pentingnya segmentasi jaringan dan implementasi *firewall* berlapis. Penggunaan *zone* DMZ memisahkan layanan publik dari jaringan internal, sehingga jika server publik dikompromikan, 
-jaringan internal (LAN) tetap aman dari serangan...]
+   <img width="410" height="65" alt="WhatsApp Image 2026-06-08 at 2 52 11 AM" src="https://github.com/user-attachments/assets/cc2b5296-7c13-4066-b961-3c34aac550ec" />
