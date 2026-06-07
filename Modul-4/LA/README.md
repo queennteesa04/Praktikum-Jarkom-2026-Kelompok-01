@@ -23,9 +23,9 @@ Berdasarkan segmentasi jaringan, berikut adalah alokasi IP Address untuk setiap 
 | MikroTik ISP | ether1 | DHCP Client | DHCP Lab | Terhubung ke jaringan lab |
 | MikroTik ISP | ether3 | `10.10.10.1/30` | - | Terhubung ke FortiGate port1 |
 | MikroTik ISP | ether2 | `172.16.100.1/24` | - | Gateway untuk Client-WAN |
-| FortiGate | port1 | `10.10.10.2/30` | `10.10.10.1` | Interface WAN |
-| FortiGate | port2 | `10.20.20.1/30` | - | Interface INSIDE ke Cisco |
-| FortiGate | port3 | `192.168.20.1/24` | - | Interface DMZ |
+| FortiGate | port1 | `10.10.10.2/30` | `10.10.10.1` | Interface Mikrotik |
+| FortiGate | port3 | `10.20.20.1/30` | - | Interface INSIDE ke Cisco |
+| FortiGate | port2 | `192.168.20.1/24` | - | Interface DMZ |
 | Cisco Router | G0/0 | `10.20.20.2/30` | - | Terhubung ke FortiGate port2 |
 | Cisco Router | G0/1 | `192.168.10.1/24` | - | Gateway LAN |
 | Client LAN (TinyCore) | eth0 | `192.168.10.10/24` | `192.168.10.1` | Client internal |
