@@ -21,8 +21,8 @@ Berdasarkan segmentasi jaringan, berikut adalah alokasi IP Address untuk setiap 
 | Perangkat | Interface | IP Address | Gateway | Keterangan |
 |:----------|:----------|:-----------|:--------|:-----------|
 | MikroTik ISP | ether1 | DHCP Client | DHCP Lab | Terhubung ke jaringan lab |
-| MikroTik ISP | ether2 | `10.10.10.1/30` | - | Terhubung ke FortiGate port1 |
-| MikroTik ISP | ether3 | `172.16.100.1/24` | - | Gateway untuk Client-WAN |
+| MikroTik ISP | ether3 | `10.10.10.1/30` | - | Terhubung ke FortiGate port1 |
+| MikroTik ISP | ether2 | `172.16.100.1/24` | - | Gateway untuk Client-WAN |
 | FortiGate | port1 | `10.10.10.2/30` | `10.10.10.1` | Interface WAN |
 | FortiGate | port2 | `10.20.20.1/30` | - | Interface INSIDE ke Cisco |
 | FortiGate | port3 | `192.168.20.1/24` | - | Interface DMZ |
