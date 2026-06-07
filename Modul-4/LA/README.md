@@ -26,7 +26,7 @@ Berdasarkan segmentasi jaringan, berikut adalah alokasi IP Address untuk setiap 
 | FortiGate | port1 | `10.10.10.2/30` | `10.10.10.1` | Interface Mikrotik |
 | FortiGate | port3 | `10.20.20.1/30` | - | Interface INSIDE ke Cisco |
 | FortiGate | port2 | `192.168.20.1/24` | - | Interface DMZ |
-| Cisco Router | G0/0 | `10.20.20.2/30` | - | Terhubung ke FortiGate port2 |
+| Cisco Router | G0/0 | `10.20.20.2/30` | - | Terhubung ke FortiGate port3 |
 | Cisco Router | G0/1 | `192.168.10.1/24` | - | Gateway LAN |
 | Client LAN (TinyCore) | eth0 | `192.168.10.10/24` | `192.168.10.1` | Client internal |
 | Client WAN (TinyCore) | eth0 | `172.16.100.10/24` | `172.16.100.1` | Client luar |
