@@ -1,6 +1,6 @@
 # Laporan Akhir - Tugas Modul 4: Firewall & NAT
 
-**Kelompok 03**
+**Kelompok 01-Kabel LAN**
 Anggota Kelompok:
 1. Nicholas Benaya - 5024241050
 2. Naufal Dzaki Hidayat - 5024241060
