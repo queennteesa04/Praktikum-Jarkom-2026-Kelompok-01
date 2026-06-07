@@ -1,4 +1,4 @@
-<img width="334" height="126" alt="WhatsApp Image 2026-06-08 at 2 45 29 AM (1)" src="https://github.com/user-attachments/assets/5dcd0d20-2c03-4fab-b0be-0d509f9a71cb" /># Laporan Akhir - Tugas Modul 4: Firewall & NAT
+# Laporan Akhir - Tugas Modul 4: Firewall & NAT
 
 **Kelompok 03**
 Anggota Kelompok:
