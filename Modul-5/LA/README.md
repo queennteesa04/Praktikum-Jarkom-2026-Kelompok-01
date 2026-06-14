@@ -1,6 +1,7 @@
 # Laporan Tugas Modul 5: Implementasi Jaringan Enterprise HQ–Branch
 
-**Kelompok 01-Kabel LAN** **Anggota Kelompok:** 1. Nicholas Benaya - 5024241050  
+**Kelompok 01-Kabel LAN** **Anggota Kelompok:**
+1. Nicholas Benaya - 5024241050  
 2. Naufal Dzaki Hidayat - 5024241060  
 3. Farhat Azzam - 5024241033  
 
